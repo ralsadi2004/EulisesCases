@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title = 'Simple Interest Calculator'>
+        <lightning-input 
+         type="number" 
+         label="Enter a number" 
+         onchange={principalChangeHandler}></lightning-input>
+
+         <lightning-input 
+         type="number" 
+         label="Enter No Years" 
+         onchange={timeChangeHandler}></lightning-input>
+
+         <lightning-input 
+         type="number" 
+         label="Enter Rate of Interest" 
+         onchange={rateChangeHandler}></lightning-input>
+
+         <lightning-button 
+           label="calculate SI" 
+           onclick={calculateSIHandler} 
+         ></lightning-button>
+
+         <lightning-formatted-text 
+           value={currentOutPut}            
+         ></lightning-formatted-text>
+
+    </lightning-card>
+</template>
